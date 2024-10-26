@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallowcinema, lo ami, o lo odi</title>
+    <link rel="stylesheet" href="CSS/Homepage.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Images/Homepage/Logo.jpg" alt="Logo" class="centered-image">
+        <h1>Lo ami, o lo odi</h1>
+        <a href="Film.html" class="button">Film</a>
+        <a href="User, pw.html" class="button">Piattaforme Film</a>
+        <br>
+        <br>
+        <button onclick="logout()">Logout</button>
+    <script>
+        function logout() {
+            document.body.innerHTML = `
+                <div class="container">
+                    <h1 class="success-message">Logout</h1>
+                </div>
+            `;
+            setTimeout(() => {
+                window.location.href = 'Hallowcinema.html';
+            }, 3000);
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <p>Designed by L.C.</p>
+</div>
+</body>
+</html>

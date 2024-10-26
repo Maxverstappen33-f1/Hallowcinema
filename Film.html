@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Film.css">
+    <title>Film</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <h1>Elenco Film</h1>
+            <br>
+            <li><a href="1°Film.html">Megan</a></li>
+            <br>
+            <li><a href="2°Film.html">Cobweb</a></li>
+            <br>
+            <li><a href="3°Film.html">Halloween</a></li>
+            <br>
+            <li><a href="4°Film.html">The Grudge</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="Homepage.html">Homepage</a>
+        <br>
+        <br>
+        <br>
+        <a onclick="logout()">Logout</a>
+        <br>
+        <br>
+        <p>Designed by L.C.</p>
+        <script>
+            function logout() {
+                document.body.innerHTML = `
+                    <div class="container">
+                        <h1 class="success-message">Logout</h1>
+                    </div>
+                `;
+                setTimeout(() => {
+                    window.location.href = 'Hallowcinema.html';
+                }, 3000);
+            }
+        </script>
+    </div>
+</body>
+</html>

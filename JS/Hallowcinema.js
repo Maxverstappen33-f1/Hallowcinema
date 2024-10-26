@@ -3,7 +3,7 @@ function validateForm() {
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('errorMessage');
 
-    if (username === 'Noi della montagna' && password === '311024') {
+    if (username === 'Noi della montagna' && password === 'mx33lh44') {
         document.body.innerHTML = `
             <div class="container">
                 <h1 class="success-message">Login success</h1>
